@@ -1,0 +1,424 @@
+
+/*NOTAS PERSONALES*/
+/*
+body{}
+.clases{}
+#id{no se puede repetir}
+*/
+/****************************************************************************/
+/****************************************************************************/
+/****************************************************************************/
+/*SECCION CABECERA DE LA PAGINA*/
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*contenedor que esta adentro del HEADER*/
+header .contenedor {
+    display: flex;    /*siempre sobre el elemento padre ()*/
+    justify-content: space-between; /*justificar el contenido a los espacios*/
+}
+header .lista-menu{
+    display: flex;
+}
+header ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+a{
+    text-decoration: none; /*todos los A de la pagina sin style*/
+}
+.contenedor {
+    max-width: 1280px;
+    width: 80%;
+    margin: auto;
+}
+header {
+    background-image: linear-gradient(rgba(84,93,220,.7)
+    ,rgba(96,171,245,.7)),url(../Img/fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+#contenedor-titulo-flex {
+    display: flex;
+    justify-content: center;
+    margin: 18vh 0;
+    width: 100%;
+}
+h1{
+    font-size: 60px;
+    color: #fff;
+    margin: 0px;
+}
+h2{
+    font-size: 25px;
+    color: #fff;
+}
+.contenedor-titulo{
+    text-align: center;  /*centrado del boton*/
+}
+/*estilos para los botones*/
+.contenedor-titulo a,#sobre-mi a,#blog a,#que-esperas a, #contacto input[type="submit"] {
+    font-size: 14px;
+    color: #fff;
+    background: #5cb8ff;
+    padding: 14px 24px;
+    width: 128px;
+    display: inline-block;
+    text-align: center;
+}
+p.logo {
+    color: #fff;
+    font-size: 20px;
+}
+nav ul li a {
+    color: #fff;
+}
+/*******************************************************************/
+/******************************************************************/
+/******************************************************************/
+/*seccion sobre-mi*/
+h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+#sobre-mi .contenedor-sobremi {
+    display: flex;
+    justify-content: space-around;
+}
+
+#sobre-mi .texto {
+    width: 42%;
+}
+/***************************************************************************/
+/**************************************************************************/
+/*************************************************************************/
+
+/*seccion servicios*/
+
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.servicio {
+    width: 24%;
+    padding: 34px 30px 38px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.servicio h4 {
+    font-size: 30px;
+    margin: 0px;
+}
+.servicio p {
+    margin-bottom: 20px;
+    height: 194px;
+}
+
+.contenedor-servicios .violeta {
+    background: linear-gradient(to top, #5055df, #6d68f3);
+    box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);
+}
+.contenedor-servicios .celeste {
+    background: linear-gradient(to top, #40a8f9, #5cb8ff);
+    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
+}
+.ondas {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+.icono {
+    float: right;
+}
+/**************************************************************************/
+/**************************************************************************/
+/**************************************************************************/
+/*Mis trabajos*/
+
+button.owl-prev, button.owl-next {
+    font-size: 40px !important;
+}
+span {
+    color: #40a8f9;
+}
+
+#mis-trabajos p {
+    text-align: center;
+    color: #000;
+}
+/*************************************************************************/
+/************************************************************************/
+/************************************************************************/
+
+/*Por que trabajar con nosotros*/
+.contenedor-trabajar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#por-que-trabajar .item{
+    width: 28%;
+    text-align: center;
+}
+
+#por-que-trabajar ul li {
+    list-style: none;
+}
+
+#por-que-trabajar ul li:nth-child(2) {
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+#por-que-trabajar ul li:nth-child(3) {
+    line-height: 31px;
+
+}
+/*************************************************************************/
+/*************************************************************************/
+/************************************************************************/
+/*seccion de blog*/
+#blog {
+    background: #f9fafc;
+    padding: 0 0 70px 0;
+}
+
+#blog .contenedor-publicaciones {
+    display: flex;
+    justify-content: space-around;
+}
+
+#blog .publicacion {
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;
+    
+}
+#blog img {
+    width: 100%;
+}
+#blog .contenido{
+    background: #fff;
+    padding: 20px;
+}
+#blog h4 {
+    margin: 0px;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+#blog p {
+    color: #5A6169;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+#blog a {
+    width: 87px ;
+}
+/****************************************************************************/
+/*****************************************************************************/
+/******************************************************************************/
+/*seccion que esperas*/
+#que-esperas{
+    background: linear-gradient(rgba(84,93,220,.94),rgba(96,171,245,.9));
+    text-align: center;
+    padding: 90px 0;
+    
+}
+#que-esperas h3 {
+    font-size: 23px;
+    color: #fff;
+}
+/****************************************************************************/
+/****************************************************************************/
+/****************************************************************************/
+/*Seccion contacto*/
+
+#contacto form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto;
+}
+
+input[type="text"], input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 18px 0px;
+    border: 0px;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px;
+}
+textarea {
+    padding: 18px 0px;
+    border: 0px;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+#contacto input[type="submit"] {
+    width: 166px;
+    margin: auto;
+}
+/**************************************************************************/
+/**************************************************************************/
+/**************************************************************************/
+/*FOOTER*/
+
+.contacto-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+  }
+  
+.contacto-info img {
+    width: 28px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+footer {
+    background: #2F2F2F;
+    padding: 40px 0px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer img {
+    margin: 0px 40px;
+    transform: rotate(0);
+    transition: 0.4s;
+}
+footer img:hover {
+    transform: rotate(360deg);
+    transition: 0.4s;
+}
+footer p {
+    color: #fff;
+    margin-top: 40px;
+}
+#whatsapp {
+    position: fixed;
+    top: 90%;
+    right: 1%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+#mis-trabajos, #sobre-mi, #contacto {
+    padding: 90px 0;
+  }
+  #por-que-trabajar{
+      padding: 100px 0 150px 0;
+  }
+
+  #servicios {
+    padding: 50px 0;
+  }
+  #blog{
+    padding: 0 0 90px 0 ;
+  }
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 800px) {
+.menu-icon{
+    display: block;
+    float: right;
+    width: 40px;
+    height: 35px;
+    margin-top: 15px;
+
+}
+header nav {
+    position: absolute;
+    top: 83px;
+    left: 0;
+    height: 268px;
+    background: #5cb8ff;
+    width: 100%;
+    display: none;
+}
+header nav ul {
+    flex-direction: column; /*acomoda los display flex uno arriba del otro*/
+}
+header nav ul li {
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 44px;
+}
+h2 {
+    font-size: 19px;
+}
+#sobre-mi .contenedor-sobremi {
+    flex-direction: column;
+}
+#sobre-mi img {
+    width: 100%;
+}
+#sobre-mi .texto {
+    width: 100%;
+}
+.contenedor-servicios {
+  flex-direction: column;  
+}
+.servicio {
+    width: 82%;
+    padding: 34px 30px 69px 30px;
+}
+.icono {
+    margin-top: 100px;
+}
+h3 {
+    font-size: 43px;
+}
+.contenedor-trabajar {
+    flex-direction: column;
+}
+#por-que-trabajar .item {
+    width: 100%;
+}
+.item ul {
+    padding: 0;
+}
+#blog .contenedor-publicaciones {
+    flex-direction: column;
+}
+#blog .publicacion {
+    width: 100%;
+    margin-bottom: 40px;
+}
+#contacto form {
+    width: 100%;
+    flex-direction: column;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+}
+footer img {
+    margin: 0 24px;
+}
+
+  } /*Cierre de retoques RESPONSIVE DISEIN*/
